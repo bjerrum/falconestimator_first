@@ -281,6 +281,8 @@ var costs = {
 				},
 				demo: <?php echo get_option('_fpe_tv_broadcast_demo_on', 503.90) ?>,
 				theatrical: <?php echo get_option('_fpe_tv_broadcast_theatrical_on', 671.70) ?>,
+				,
+				made_in_played_in: <?php echo get_option('_mipi_tv_oncam_prin', 570) ?>,
 			 } 
 		  },
 		  principal_off: {
@@ -367,6 +369,7 @@ var costs = {
 				},
 				demo: <?php echo get_option('_fpe_tv_broadcast_demo_off', 503.90) ?>,
 				theatrical: <?php echo get_option('_fpe_tv_broadcast_theatrical_off', 505.05) ?>,
+				made_in_played_in: <?php echo get_option('_mipi_tv_offcam_prin', 428) ?>
 			 } 
 		  },
 		  stunt_performer: {session: <?php echo get_option('_fpe_principal_actor_on_camera', 671.7) ?>},
@@ -374,7 +377,8 @@ var costs = {
 		  speciality_act: {session: <?php echo get_option('_fpe_principal_actor_on_camera', 671.7) ?>},
 		  dancer: {session: <?php echo get_option('_fpe_principal_actor_on_camera', 671.7) ?>},
 		  singer: {session: <?php echo get_option('_fpe_principal_actor_off_camera', 505.05) ?>},
-		  extra: {session: <?php echo get_option('_fpe_extra_actor', 366,37) ?>}
+		  extra: {session: <?php echo get_option('_fpe_extra_actor', 366,37) ?>},
+		  extra_mipi: <?php echo get_option('_mipi_tv_extra_perf', 315) ?>}
 	   },
 	   radio: {
 		  announcer: {
