@@ -115,6 +115,13 @@
             </table>
             <?php endif; ?>
 
+            <h3>Made-In/Played-In</h3>
+            <table class="form-table">
+                <?php
+                FalconEstimator::field('Actor/Announcer', "_radio_mipi_actor_announcer_{$group}");
+                ?>
+            </table>
+
             <h3>Other Rates</h3>
             <table class="form-table">
                 <?php

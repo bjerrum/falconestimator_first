@@ -184,6 +184,17 @@
                 ?>
             </table>
 
+            <h3>Made-In/Played-In</h3>
+            <table class="form-table">
+                <?php
+                foreach ($type as $t) {
+					FalconEstimator::field("On-Camera Principal", "_tv_mipi_oncam_prin");
+					FalconEstimator::field("Off-Camera Principle", "_tv_mipi_offcam_prin");
+					FalconEstimator::field("Extra Performer", "_tv_extra");					
+                }
+                ?>
+            </table>
+
             <h3>Other Broadcast Rates</h3>
             <table class="form-table">
 				<?php
