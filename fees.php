@@ -78,6 +78,15 @@
 				?>
             </table>
 
+            <h3>Session Fees for Made-In/Played-In TV Commercial</h3>
+            <table class="form-table">
+                <?php
+                FalconEstimator::field('On-Camera Principal', '_mipi_oncam_prin');
+                FalconEstimator::field('Off-Camera Principal', '_mipi_offcam_prin');
+                FalconEstimator::field('Extra Performer', '_mipi_extra_perf');
+                ?>
+            </table>
+
             <?php /*
             <h3>Session Fees for PSA</h3>
             <table class="form-table">
