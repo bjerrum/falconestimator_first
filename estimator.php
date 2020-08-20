@@ -16,7 +16,7 @@ class FalconEstimator {
 
 	public function mipi_performers(){
 		
-		public $performers = [
+		$performers = [
 			'actor_on_camera' => 'On-Camera Principal',		
 			'actor_off_camera' => 'Off-Cameral Principal (Ex. Voiceover)',		
 			'extra' => 'Extra Performer',
