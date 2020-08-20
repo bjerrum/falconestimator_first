@@ -1,7 +1,7 @@
 var Fpe = {};
 
 (function($) {
-    Fpe.init = function() {
+    Fpe.init = function() {console.log('init');
         Fpe.totalsOnScreen();
         $('#to-top').hide();
         $(window).scroll(function() {
