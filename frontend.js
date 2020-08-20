@@ -118,7 +118,7 @@
 			Fpe.moveNext();
 		});
 
-		$('#tv_performers .answer').click(function(e) {console.log(madeInPlayedIn);
+		$('#tv_performers .answer').click(function(e) {
 			e.preventDefault();
 			Fpe.temp = Fpe.next.slice();
 			Fpe.performers = {};
@@ -166,13 +166,9 @@
 		});
 
 		$('#made_in_played_in .answer').click(function(e) {
-			e.preventDefault();
 			var set = $(this).data('set');
 			console.log(set);
 			console.log($(this).data('value'));
-			var madeInPlayedIn = $(this).data('value');
-			
-			console.log(Fpe.performers);
 		});
 
 		$('.input-answer').keyup(function(e) {
