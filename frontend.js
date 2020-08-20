@@ -167,12 +167,7 @@
 			Fpe.moveNext();
 		});
 
-		$('#made_in_played_in .answer').click(function(e) {
-			var set = $(this).data('set');
-			console.log(set);
-			console.log($(this).data('value'));
-			
-		});
+		
 
 		$('.input-answer').keyup(function(e) {
 			if (e.which=='13') {
