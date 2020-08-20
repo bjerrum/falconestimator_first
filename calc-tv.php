@@ -35,6 +35,11 @@
 
 
 <div class="question" id="tv_performers">
+	<?php
+		$searchNode = $xmlDoc->getElementsById("made_in_played_in");
+		$mipi = $searchNode->getElementsByTagName('div')->item(0)->childNodes->item(0)->nodeValue;
+		echo $mipi;
+	?>
 	<h4>What type of performer will you be hiring for?</h4>
 	<?php
 		foreach ($performers as $type => $label) {
