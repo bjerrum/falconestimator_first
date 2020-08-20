@@ -25,13 +25,9 @@
 
 <div class="question" id="prod_full_term">
 	<h4>Production only or full term (signatory)?</h4>
-	<div class="answer" data-set="prod_full_term" data-value="prod_only" data-follow="mipi_performers">Production Only</div>
-	<div class="answer" data-set="prod_full_term" data-value="full_term" data-follow="mipi_performers">Full Term (signatory)</div>	
+	<div class="answer" data-set="prod_full_term" data-value="prod_only" data-follow="tv_performers">Production Only</div>
+	<div class="answer" data-set="prod_full_term" data-value="full_term" data-follow="tv_performers">Full Term (signatory)</div>	
 </div>
-
-<?php if (made_in_played_in): ?>
-
-<?php endif; ?>
 
 <div class="question" id="tv_performers">
 	<h4>What type of performer will you be hiring for?</h4>
