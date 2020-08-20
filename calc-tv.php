@@ -15,7 +15,7 @@
 	<h4>Is this a Made-in/Played-in (local)?</h4>
 	<div class="answer" data-set="made_in_played_in" data-value="1">Yes</div>
 	<div class="answer" data-set="made_in_played_in" data-value="0" data-follow="tv_performers">No</div>
-	
+	<div class="answer" data-show="tv">Continue</div>
 </div>
 
 <div class="question" id="tv_performers">
