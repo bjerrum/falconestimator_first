@@ -124,7 +124,7 @@
 			Fpe.performers = {};
 			$('#tv_performers input').each(function() {
 			 if (parseInt($(this).val())) {
-				var type = $(this).attr('name');
+				var type = $(this).attr('name');console.log(type);
 				Fpe.performers[type] = parseInt($(this).val());
 				switch ($(this).attr('name')) {
 					case 'singer': 
