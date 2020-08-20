@@ -169,7 +169,7 @@
 			var set = $(this).data('set');
 			console.log(set);
 			console.log($(this).data('value'));
-			Fpe.performers = Fpe.mipi_performers;
+			//Fpe.performers = Fpe.mipi_performers;
 			console.log(Fpe.performers);
 		});
 
