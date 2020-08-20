@@ -167,7 +167,7 @@
 
 		$('#made_in_played_in .answer').click(function(e) {
 			e.preventDefault();
-			var set = $(this).data('set');
+			var set = $('#made_in_played_in').data('set');
 			console.log(set);
 			console.log($(this).data('value'));
 			
