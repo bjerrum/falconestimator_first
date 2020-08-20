@@ -118,8 +118,6 @@
 			Fpe.moveNext();
 		});
 
-		
-
 		$('#tv_performers .answer').click(function(e) {
 			e.preventDefault();
 			Fpe.temp = Fpe.next.slice();
@@ -166,8 +164,6 @@
 			});
 			Fpe.moveNext();
 		});
-
-		
 
 		$('.input-answer').keyup(function(e) {
 			if (e.which=='13') {
@@ -425,7 +421,7 @@
 		var total_performers = {};
 
 		sessionFeesTotal = 0;
-console.log(Fpe.madeInPlayedIn); console.log(Fpe.performers);
+
 		if (Fpe.type == 'radio' || Fpe.type == 'tv') {
 			// performers session fees for tv and radio
 			for(var key in Fpe.performers) {
