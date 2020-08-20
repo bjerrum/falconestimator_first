@@ -24,26 +24,12 @@
 </div>
 
 <div class="question" id="prod_full_term">
-	<?php 
-		$performers = [
-		'actor_on_camera' => 'On-Camera Principal',		
-		'actor_off_camera' => 'Off-Cameral Principal (Ex. Voiceover)',		
-		'extra' => 'Extra Performer',
-	];
+	<?php
+	FalconEstimator::mipi_performers();
 	?>
 	<h4>Production only or full term (signatory)?</h4>
 	<div class="answer" data-set="prod_full_term" data-value="prod_only" data-follow="tv_performers">Production Only</div>
 	<div class="answer" data-set="prod_full_term" data-value="full_term" data-follow="tv_performers">Full Term (signatory)</div>	
-</div>
-
-<div class="question" id="mipi_performers">
-	<h4>What type of performer will you be hiring for?</h4>
-	<?php
-		foreach ($performers as $type => $label) {
-			FalconEstimator::slider($type, $label);
-		}
-	?>
-	<div class="answer special">Continue</div>
 </div>
 
 <div class="question" id="tv_performers">
