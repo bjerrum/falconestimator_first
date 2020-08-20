@@ -119,7 +119,7 @@
 		});
 
 		$('#tv_performers .answer').click(function(e) {
-			e.preventDefault();console.log('tv perf');console.log(madeInPlayedIn);
+			e.preventDefault();
 			Fpe.temp = Fpe.next.slice();
 			Fpe.performers = {};
 			$('#tv_performers input').each(function() {
@@ -144,7 +144,10 @@
 			 }
 			});
 			Fpe.moveNext();
-		});Default();
+		});
+
+		$('#radio_performers .answer').click(function(e) {
+			e.preventDefault();
 			Fpe.temp = Fpe.next.slice();
 			Fpe.performers = {};
 			$('#radio_performers input').each(function() {
