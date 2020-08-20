@@ -171,7 +171,7 @@
 			var set = $(this).data('set');
 			console.log(set);
 			console.log($(this).data('value'));
-			Fpe.madeInPlayedIn = $(this).data('value');
+			
 		});
 
 		$('.input-answer').keyup(function(e) {
