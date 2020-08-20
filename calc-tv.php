@@ -24,9 +24,9 @@
 </div>
 
 <div class="question" id="mipi_performers">
-	<h4>What type of performer will you be hiring for?</h4>
+	<h4>What type of performer will you be hiring for mipi?</h4>
 	<?php
-		foreach ($markets as $type => $label) {
+		foreach ($markets as $type) {
 			echo $type;
 		}
 	?>
