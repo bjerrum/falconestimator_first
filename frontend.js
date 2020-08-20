@@ -169,7 +169,7 @@
 			var set = $(this).data('set');
 			console.log(set);
 			console.log($(this).data('value'));
-			//Fpe.performers = Fpe.mipi_performers;
+			Fpe.performers = ['actor_on_camera' => 'On-Camera Principal','actor_off_camera' => 'Off-Cameral Principal (Ex. Voiceover)',	'extra' => 'Extra Performer'];
 			console.log(Fpe.performers);
 		});
 
