@@ -14,7 +14,6 @@ class FalconEstimator {
 
 	public $markets = array('Atlanta','Austin','Baltimore','Boston','Charlotte','Cincinnati','Cleveland','Columbus OH','Dallas-Fort Worth','Denver','Detroit','Grand Rapids-Kalamazoo-Battle Creek','Greenville-Spartanburg-Asheville-Anderson NC','Hartford-New Haven','Houston','Indianapolis','Kansas City','Las Vegas','Mexico/Mexico City','Miami','Milwaukee','Minneapolis - St. Paul','Montreal','Nashville','Norfolk-Portsmouth-Newport News','Oklahoma City','Orlando-Daytona Beach','Philadelphia','Phoenix','Pittsburgh','Portland, OR','Puerto Rico','Raleigh-Durham','Sacramento-Stockton','Salt Lake City','San Antonio','San Diego','San Francisco','Seattle-Tacoma','St. Louis','Tampa-St. Petersburg','Toronto','Vancouver B.C.','Washington D.C.','West Palm Beach - Ft. Pierce',);
 
-
 	public function __construct() {
 		add_action('admin_menu', array($this, 'menu'));
 		add_action('admin_enqueue_scripts', array($this, 'admin_scripts'));
