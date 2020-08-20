@@ -119,7 +119,7 @@
 		});
 
 		$('#tv_performers .answer').click(function(e) {
-			e.preventDefault();console.log(madeInPlayedIn);
+			e.preventDefault();console.log('tv perf');console.log(madeInPlayedIn);
 			Fpe.temp = Fpe.next.slice();
 			Fpe.performers = {};
 			$('#tv_performers input').each(function() {
