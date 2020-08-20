@@ -165,6 +165,11 @@
 			Fpe.moveNext();
 		});
 
+		$('#made_in_played_in .answer').click(function(e) {
+			var set = $(this).data('set');
+			conosole.log(set);
+		});
+
 		$('.input-answer').keyup(function(e) {
 			if (e.which=='13') {
 			 Fpe.move($(this));

@@ -29,15 +29,9 @@
 	<div class="answer" data-set="prod_full_term" data-value="full_term" data-follow="mipi_performers">Full Term (signatory)</div>	
 </div>
 
-<div class="question" id="mipi_performers">
-	<h4>What type of performer will you be hiring for?</h4>
-	<?php
-		foreach ($mipi_performers as $type => $label) {
-			FalconEstimator::slider($type, $label);
-		}
-	?>
-	<div class="answer special">Continue</div>
-</div>
+<?php if (made_in_played_in): ?>
+
+<?php endif; ?>
 
 <div class="question" id="tv_performers">
 	<h4>What type of performer will you be hiring for?</h4>
