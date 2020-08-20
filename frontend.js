@@ -144,10 +144,7 @@
 			 }
 			});
 			Fpe.moveNext();
-		});
-
-		$('#radio_performers .answer').click(function(e) {
-			e.preventDefault();
+		});Default();
 			Fpe.temp = Fpe.next.slice();
 			Fpe.performers = {};
 			$('#radio_performers input').each(function() {
@@ -428,7 +425,7 @@
 		var total_performers = {};
 
 		sessionFeesTotal = 0;
-
+console.log(Fpe.performers);
 		if (Fpe.type == 'radio' || Fpe.type == 'tv') {
 			// performers session fees for tv and radio
 			for(var key in Fpe.performers) {
