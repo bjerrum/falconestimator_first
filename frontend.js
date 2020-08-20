@@ -170,6 +170,7 @@
 			console.log(set);
 			console.log($(this).data('value'));
 			Fpe.performers = Fpe.mipi_performers;
+			console.log(Fpe.performers);
 		});
 
 		$('.input-answer').keyup(function(e) {
