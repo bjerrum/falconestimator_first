@@ -19,7 +19,7 @@
 </div>
 
 <div class="question" id="tv_performers">
-	<h4>What type of performer will you be hiring for?</h4>
+	<h4>What type of performer will you be hiring for?x</h4>
 	<?php
 		foreach ($performers as $type => $label) {
 			FalconEstimator::slider($type, $label);
