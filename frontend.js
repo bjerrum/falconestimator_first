@@ -126,18 +126,15 @@
 			 if (parseInt($(this).val())) {
 				var type = $(this).attr('name');
 				Fpe.performers[type] = parseInt($(this).val());
-				switch ($(this).attr('name')) {
-					case 'singer': 
-						Fpe.next.unshift('tv_singers', 'tv_multitracking', 'tv_sweetening');
-						break;
+				switch ($(this).attr('name')) {					
 					case 'actor_off_camera':
 						Fpe.next.unshift('tv_actor_off_camera_lift1', 'tv_off_camera_tags'); 
 						break;
 					case 'actor_on_camera':
 						Fpe.next.unshift('tv_actor_on_camera_lift1', 'tv_on_camera_tags', 'tv_travel_days_actor_on_camera');
 						break;
-					case 'stunt_performer':
-						Fpe.next.unshift('tv_on_camera_tags', 'tv_travel_days_stunt_performer');
+					case 'extra':
+						Fpe.next.unshift('tv_on_camera_tags');
 						break;
 				}
 				Fpe.next.unshift('tv_'+type+'_hours', 'tv_'+type+'_weekend','tv_'+type+'_nightwork','tv_'+type+'_travel');
@@ -197,7 +194,7 @@
 			var set = $(this).data('set');
 			console.log(set);
 			console.log($(this).data('value'));
-			var madeInPlayedIn = $(this).data('value');
+			Fpe.madeInPlayedIn = $(this).data('value');
 		});
 
 		$('.input-answer').keyup(function(e) {
@@ -456,7 +453,7 @@
 		var total_performers = {};
 
 		sessionFeesTotal = 0;
-
+console.log(Fpe.madeInPlayedIn); console.log(Fpe.performers);
 		if (Fpe.type == 'radio' || Fpe.type == 'tv') {
 			// performers session fees for tv and radio
 			for(var key in Fpe.performers) {
