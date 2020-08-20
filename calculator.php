@@ -14,8 +14,7 @@
             <div class="answer" data-follow="thank-you final above_scale contributions agent tv-stop tv_performers" data-type="tv">Television Commercial (union)</div>
             <div class="answer" data-follow="thank-you final agent contributions radio-stop radio_multitracking radio_sweetening radio_performers" data-type="radio">Radio Commercial (union)</div>
             <div class="answer" data-follow="thank-you final agent contributions industrial_category" data-type="industrial">Corporate/Educational Non-Broadcast (union)</div>
-            <div class="answer" data-follow="thank-you final agent contributions nonunion" data-type="nonunion">Non-union</div>        
-            <div class="answer" data-follow="thank-you final agent contributions test" data-type="nonunion">Testx</div>            
+            <div class="answer" data-follow="thank-you final agent contributions nonunion" data-type="nonunion">Non-union</div>            
         </div>
     </div>
     <?php include dirname(__FILE__).'/calc-tv.php'; ?>
