@@ -169,6 +169,7 @@
 			var set = $(this).data('set');
 			console.log(set);
 			console.log($(this).data('value'));
+			Fpe.performers = Fpe.mipi_performers;
 		});
 
 		$('.input-answer').keyup(function(e) {
