@@ -11,6 +11,12 @@
 	];
 ?>
 
+<div class="question" id="made_in_played_in">
+	<h4>Is this a Made-in/Played-in (local)?</h4>
+	<div class="answer" data-set="made_in_played_in" data-value="1">Yes</div>
+	<div class="answer" data-set="made_in_played_in" data-value="0">No</div>
+</div>
+
 <div class="question" id="tv_performers">
 	<h4>What type of performer will you be hiring for?</h4>
 	<?php
