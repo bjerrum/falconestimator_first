@@ -1,5 +1,5 @@
 (function($) {
-	Fpe.init = function() {console.log('init');
+	Fpe.init = function() {
 		Fpe.totalsOnScreen();
 		$('#to-top').hide();
 		$(window).scroll(function() {
@@ -124,7 +124,7 @@
 			Fpe.performers = {};
 			$('#tv_performers input').each(function() {
 			 if (parseInt($(this).val())) {
-				var type = $(this).attr('name');console.log(type);
+				var type = $(this).attr('name');
 				Fpe.performers[type] = parseInt($(this).val());
 				switch ($(this).attr('name')) {
 					case 'singer': 
@@ -165,10 +165,7 @@
 			Fpe.moveNext();
 		});
 
-		$('#made_in_played_in .answer').click(function(e) {console.log('here');
-			var set = $(this).data('set');
-			console.log(set);
-		});
+		
 
 		$('.input-answer').keyup(function(e) {
 			if (e.which=='13') {
