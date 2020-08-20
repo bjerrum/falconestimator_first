@@ -14,7 +14,7 @@ class FalconEstimator {
 
 	public $markets = array('Atlanta','Austin','Baltimore','Boston','Charlotte','Cincinnati','Cleveland','Columbus OH','Dallas-Fort Worth','Denver','Detroit','Grand Rapids-Kalamazoo-Battle Creek','Greenville-Spartanburg-Asheville-Anderson NC','Hartford-New Haven','Houston','Indianapolis','Kansas City','Las Vegas','Mexico/Mexico City','Miami','Milwaukee','Minneapolis - St. Paul','Montreal','Nashville','Norfolk-Portsmouth-Newport News','Oklahoma City','Orlando-Daytona Beach','Philadelphia','Phoenix','Pittsburgh','Portland, OR','Puerto Rico','Raleigh-Durham','Sacramento-Stockton','Salt Lake City','San Antonio','San Diego','San Francisco','Seattle-Tacoma','St. Louis','Tampa-St. Petersburg','Toronto','Vancouver B.C.','Washington D.C.','West Palm Beach - Ft. Pierce',);
 
-	public static function mipi_performers(){
+	public function mipi_performers(){
 		
 		public $performers = [
 			'actor_on_camera' => 'On-Camera Principal',		
