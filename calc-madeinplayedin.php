@@ -25,7 +25,7 @@
 <div class="question" id="mipi_<?php echo $type ?>_hours" >
 	<h4>How many hours for <span><?php echo $label ?></span>?</h4>
 	<?php FalconEstimator::slider( $type.'_hours', '', $default, $default, 12 ); ?>
-	<div class="answer" data-show="tv">Continue</div>
+	<div class="answer" data-show="mipi">Continue</div>
 </div>
 <?php endforeach; ?>
 
