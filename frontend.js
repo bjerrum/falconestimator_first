@@ -190,6 +190,25 @@
 			Fpe.moveNext();
 		});
 
+		$('#radio_mipi_performers .answer').click(function(e) {
+			e.preventDefault();
+			Fpe.temp = Fpe.next.slice();
+			Fpe.performers = {};
+			$('#radio_mipi_performers input').each(function() {
+			 if (parseInt($(this).val())) {
+				var type = $(this).attr('name');
+				Fpe.performers[type] = parseFloat($(this).val());
+				/*if (type == 'creative_session') {
+					Fpe.next.unshift('radio_creative_sessions');
+				}*/
+				//if ($.inArray(type, ['creative_session', 'singers_contractors']) == -1) {
+				Fpe.next.unshift('radio_'+type+'_weekend','radio_'+type+'_nightwork','radio_'+type+'_travel');
+				//}
+			 }
+			});
+			Fpe.moveNext();
+		});
+
 		$('.input-answer').keyup(function(e) {
 			if (e.which=='13') {
 			 Fpe.move($(this));

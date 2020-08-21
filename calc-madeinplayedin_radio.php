@@ -19,24 +19,8 @@
 	?>
 	<div class="answer special">Continue</div>
 </div>
-<?php foreach ($performers as $type => $label): $default = $type=='actor_off_camera' ? 2 : 8; ?>
-<div class="question" id="radio_mipi_<?php echo $type ?>_hours" >
-	<h4>How many hours for <span><?php echo $label ?></span>?</h4>
-	<?php FalconEstimator::slider( $type.'_hours', '', $default, $default, 12 ); ?>
-	<div class="answer" data-show="tv">Continue</div>
-</div>
-<?php endforeach; ?>
-
-<?php foreach ($performers as $type => $label): ?>
 
 
-<div class="question" id="radio_mipi_<?php echo $type ?>_overtime">
-	<h4>Overtime for <span><?php echo $label ?></span>?</h4>
-	<input type="number" name="<?php echo $type ?>_overtime" value="0" placeholder="value in $">
-	<div class="answer">Continue</div>
-</div>
-
-<?php endforeach; ?>
 
 <div id="radio_mipi-stop" class="question">
     <h4>Would you like to estimate performer usage costs?</h4>
