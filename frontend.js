@@ -156,16 +156,16 @@
 				Fpe.performers[type] = parseInt($(this).val());
 				switch ($(this).attr('name')) {					
 					case 'actor_off_camera':
-						Fpe.next.unshift('mipi_actor_off_camera_lift1', 'mipi_off_camera_tags'); 
+						Fpe.next.unshift('tv_actor_off_camera_lift1', 'tv_off_camera_tags'); 
 						break;
 					case 'actor_on_camera':
-						Fpe.next.unshift('mipi_actor_on_camera_lift1', 'mipi_on_camera_tags', 'mipi_travel_days_actor_on_camera');
+						Fpe.next.unshift('tv_actor_on_camera_lift1', 'tv_on_camera_tags', 'tv_travel_days_actor_on_camera');
 						break;
 					case 'extra':
-						Fpe.next.unshift('mipi_on_camera_tags');
+						Fpe.next.unshift('tv_on_camera_tags');
 						break;
 				}
-				Fpe.next.unshift('mipi_'+type+'_hours', 'mipi_'+type+'_weekend','mipi_'+type+'_nightwork','mipi_'+type+'_travel', 'mipi_'+type+'_overtime');
+				Fpe.next.unshift('tv_'+type+'_hours', 'tv_'+type+'_weekend','tv_'+type+'_nightwork','tv_'+type+'_travel', 'tv_'+type+'_overtime');
 			 }
 			});
 			Fpe.moveNext();
