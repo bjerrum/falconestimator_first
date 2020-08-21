@@ -147,12 +147,12 @@
 		});
 
 		$('#mipi_performers .answer').click(function(e) {
-			e.preventDefault();
+			e.preventDefault();console.log('mipi');
 			Fpe.temp = Fpe.next.slice();
 			Fpe.performers = {};
 			$('#mipi_performers input').each(function() {
 			 if (parseInt($(this).val())) {
-				var type = $(this).attr('name');
+				var type = $(this).attr('name');console.log(type);
 				Fpe.performers[type] = parseInt($(this).val());
 				switch ($(this).attr('name')) {					
 					case 'actor_off_camera':
