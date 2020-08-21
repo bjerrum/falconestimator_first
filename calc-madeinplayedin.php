@@ -1,22 +1,18 @@
 <?php
 	$performers = [
-		'actor_on_camera' => 'On-Camera Principal',
-		'stunt_performer' => 'Stunt Performer',
-		'pilot' => 'Pilot',
-		'speciality_act' => 'Speciality Act',
-		'dancer' => 'Dancer',
-		'actor_off_camera' => 'Off-Cameral Principal (Ex. Voiceover)',
-		'singer' => 'Singer',
+		'actor_on_camera' => 'On-Camera Principal',		
+		'actor_off_camera' => 'Off-Cameral Principal (Ex. Voiceover)',		
 		'extra' => 'Extra Performer',
 	];
 ?>
-<div class="question" id="made_in_played_in">
-	<h4>Is this a Made-in/Played-in (local)?</h4>
-	<div class="answer" data-set="made_in_played_in" data-value="1" data-follow="prod_full_term">Yes</div>
-	<div class="answer" data-set="made_in_played_in" data-value="0" data-follow="tv_performers">No</div>
+
+<div class="question" id="prod_full_term">	
+	<h4>Production only or full term (signatory)?</h4>
+	<div class="answer" data-set="prod_full_term" data-value="prod_only" data-follow="mipi_performers">Production Only</div>
+	<div class="answer" data-set="prod_full_term" data-value="full_term" data-follow="mipi_performers">Full Term (signatory)</div>
 </div>
 
-<div class="question" id="tv_performers">	
+<div class="question" id="mipi_performers">	
 	<h4>What type of performer will you be hiring for?</h4>
 	<?php
 		foreach ($performers as $type => $label) {
