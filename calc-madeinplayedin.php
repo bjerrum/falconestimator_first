@@ -22,6 +22,7 @@
 	<div class="answer special">Continue</div>
 </div>
 <?php foreach ($performers as $type => $label): $default = $type=='actor_off_camera' ? 2 : 8; ?>
+	<!--
 <div class="question" id="mipi_<?php echo $type ?>_hours" >
 	<h4>How many hours for <span><?php echo $label ?></span>?</h4>
 	<?php FalconEstimator::slider( $type.'_hours', '', $default, $default, 12 ); ?>
@@ -71,7 +72,7 @@
     	<div class="answer" data-set="<?php echo $type ?>_lift2" data-value="0">No</div>
 	</div>
 <?php endif; ?>
-
+-->
 <div class="question" id="mipi_<?php echo $type ?>_overtime">
 	<h4>Overtime for <span><?php echo $label ?></span>?</h4>
 	<input type="number" name="<?php echo $type ?>_overtime" value="0" placeholder="value in $">
