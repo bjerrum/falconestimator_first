@@ -12,7 +12,7 @@
 ?>
 <div class="question" id="made_in_played_in">
 	<h4>Is this a Made-in/Played-in (local)?</h4>
-	<div class="answer" data-set="made_in_played_in" data-value="1" data-follow="thank-you final above_scale contributions agent mipi_cycle tv-stop prod_full_term">Yes</div>
+	<div class="answer" data-set="made_in_played_in" data-value="1" data-follow="thank-you final above_scale contributions agent mipi-stop prod_full_term">Yes</div>
 	<div class="answer" data-set="made_in_played_in" data-value="0" data-follow="thank-you final above_scale contributions agent tv-stop tv_performers">No</div>
 </div>
 
@@ -128,7 +128,7 @@
 </div>
 
 <div id="tv-stop" class="question">
-    <h4>Would you like to estimate perform usage costs?</h4>
+    <h4>Would you like to estimate performer usage costs?</h4>
     <div class="answer" data-follow="tv_broadcast">Yes</div>
     <div class="answer">No, estimate for talent session fees only</div>
 </div>
@@ -149,8 +149,7 @@
 	<div class="answer multi" data-set="demo" data-value="1">Demo</div>
 	<div class="answer multi" data-set="psa" data-value="1">PSA</div>
 	<div class="answer multi" data-set="foreign" data-value="1">Foreign Use</div>
-	<div class="answer multi" data-set="theatrical" data-value="1">Theatrical/Industrial use</div>
-	<div class="answer multi" data-set="madein" data-value="1">Made-in/Played-in</div>
+	<div class="answer multi" data-set="theatrical" data-value="1">Theatrical/Industrial use</div>	
 	<div class="answer special">Continue</div>
 </div>
 

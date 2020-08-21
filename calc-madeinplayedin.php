@@ -38,13 +38,19 @@
 	<div class="answer">Continue</div>
 </div>
 
+<?php endforeach; ?>
+
+<div id="mipi-stop" class="question">
+    <h4>Would you like to estimate performer usage costs?</h4>
+    <div class="answer" data-follow="mipi_cycle">Yes</div>
+    <div class="answer">No, estimate for talent session fees only</div>
+</div>
+
 <div id="mipi_cycle" class="question">
-	<h4>Select desired use cycle for Move over for Internet</h4>
+	<h4>Select desired use cycle for Made-in/Played in (local)</h4>
 	<div class="answer" data-set="mipi_cycle" data-value="4week">4 Week Option</div>
     <div class="answer" data-set="mipi_cycle" data-value="13week">13 Week Option</div>
     <div class="answer" data-set="mipi_cycle" data-value="1year">1 year Option</div>
     <div class="answer" data-set="mipi_cycle" data-value="21month">21 months Option</div>
 </div>
-
-<?php endforeach; ?>
 
