@@ -31,51 +31,19 @@
 
 <?php foreach ($performers as $type => $label): ?>
 
-<div class="question" id="mipi_<?php echo $type ?>_weekend">
-	<h4>Weekend or Holiday work for <span><?php echo $label ?></span>mipi?</h4>
-	<div class="answer" data-follow="tv_<?php echo $type ?>_weekend_days" data-set="<?php echo $type ?>_weekend" data-value="1">Yes</div>
-    <div class="answer" data-set="<?php echo $type ?>_weekend" data-value="0">No</div>
-</div>
-<div class="question" id="mipi_<?php echo $type ?>_weekend_days">
-	<h4>How many days?</h4>
-    <?php FalconEstimator::slider($type.'_weekend_days', '', 1, 1, 10); ?>
-	<div class="answer">Continue</div>
-</div>
-
-<div class="question" id="mipi_<?php echo $type ?>_nightwork">
-	<h4>Nightwork work for <span><?php echo $label ?></span>?</h4>
-	<div class="answer" data-follow="tv_<?php echo $type ?>_nightwork_time" data-set="<?php echo $type ?>_nightwork" data-value="1">Yes</div>
-    <div class="answer" data-set="<?php echo $type ?>_nightwork" data-value="0">No</div>
-</div>
-<div class="question" id="mipi_<?php echo $type ?>_nightwork_time">
-	<h4>How many hours?</h4>
-	<?php FalconEstimator::slider($type.'_nightwork_time', '', 1, 1, 10); ?>
-	<div class="answer">Continue</div>
-</div>
-
-<div class="question" id="mipi_<?php echo $type ?>_travel">
-	<h4>Travel reimbursments work for <span><?php echo $label ?></span>?</h4>
-	<input type="number" name="<?php echo $type ?>_travel" value="0" placeholder="value in $">
-	<div class="answer">Continue</div>
-</div>
-
-<?php if (in_array($type, ['actor_on_camera', 'actor_off_camera'])): ?>
-	<div class="question" id="mipi_<?php echo $type ?>_lift1">
-		<h4>1st lift for <span><?php echo $label ?></span>?</h4>
-		<div class="answer" data-follow="mipi_<?php echo $type ?>_lift2" data-set="<?php echo $type ?>_lift1" data-value="1">Yes</div>
-    	<div class="answer" data-set="<?php echo $type ?>_lift1" data-value="0">No</div>
-	</div>
-	<div class="question" id="mipi_<?php echo $type ?>_lift2">
-		<h4>2nd lift for <span><?php echo $label ?></span>?</h4>
-		<div class="answer" data-set="<?php echo $type ?>_lift2" data-value="1">Yes</div>
-    	<div class="answer" data-set="<?php echo $type ?>_lift2" data-value="0">No</div>
-	</div>
-<?php endif; ?>
 
 <div class="question" id="mipi_<?php echo $type ?>_overtime">
 	<h4>Overtime for <span><?php echo $label ?></span>?</h4>
 	<input type="number" name="<?php echo $type ?>_overtime" value="0" placeholder="value in $">
 	<div class="answer">Continue</div>
+</div>
+
+<div id="mipi_cycle" class="question">
+	<h4>Select desired use cycle for Move over for Internet</h4>
+	<div class="answer" data-set="mipi_cycle" data-value="4week">4 Week Option</div>
+    <div class="answer" data-set="mipi_cycle" data-value="13week">13 Week Option</div>
+    <div class="answer" data-set="mipi_cycle" data-value="1year">1 year Option</div>
+    <div class="answer" data-set="mipi_cycle" data-value="21month">21 months Option</div>
 </div>
 
 <?php endforeach; ?>
