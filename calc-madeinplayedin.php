@@ -22,7 +22,7 @@
 	<div class="answer special">Continue</div>
 </div>
 <?php foreach ($performers as $type => $label): $default = $type=='actor_off_camera' ? 2 : 8; ?>
-<div class="question" id="tv_<?php echo $type ?>_hours" >
+<div class="question" id="mipi_<?php echo $type ?>_hours" >
 	<h4>How many hours for <span><?php echo $label ?></span>?</h4>
 	<?php FalconEstimator::slider( $type.'_hours', '', $default, $default, 12 ); ?>
 	<div class="answer" data-show="tv">Continue</div>
