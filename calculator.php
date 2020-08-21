@@ -22,6 +22,7 @@
     <?php include dirname(__FILE__).'/calc-corporate.php'; ?>
     <?php include dirname(__FILE__).'/calc-nonunion.php'; ?>
     <?php include dirname(__FILE__).'/calc-madeinplayedin_tv.php'; ?>
+    <?php include dirname(__FILE__).'/calc-madeinplayedin_radio.php'; ?>
     <div id="agent" class="question">
         <h4>Talent Agent Service Fee (percent)</h4>
         <?php FalconEstimator::slider('agent_fee', '', 10, 0, 25, 0.5); ?>
