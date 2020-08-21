@@ -12,8 +12,8 @@
 ?>
 <div class="question" id="made_in_played_in">
 	<h4>Is this a Made-in/Played-in (local)?</h4>
-	<div class="answer" data-set="made_in_played_in" data-value="1" data-follow="prod_full_term">Yes</div>
-	<div class="answer" data-set="made_in_played_in" data-value="0" data-follow="tv_performers">No</div>
+	<div class="answer" data-set="made_in_played_in" data-value="1" data-follow="thank-you final above_scale contributions agent tv-stop prod_full_term">Yes</div>
+	<div class="answer" data-set="made_in_played_in" data-value="0" data-follow="thank-you final above_scale contributions agent tv-stop tv_performers">No</div>
 </div>
 
 <div class="question" id="tv_performers">	

@@ -11,7 +11,7 @@
     <div class="question" id="commercial-type" style="display: block;">
         <h4>What kind of production are you hiring for?</h4>
         <div class="answers">
-            <div class="answer" data-follow="thank-you final above_scale contributions agent tv-stop made_in_played_in" data-type="tv">Television Commercial (union)</div>
+            <div class="answer" data-follow="made_in_played_in" data-type="tv">Television Commercial (union)</div>
             <div class="answer" data-follow="thank-you final agent contributions radio-stop radio_multitracking radio_sweetening radio_performers" data-type="radio">Radio Commercial (union)</div>
             <div class="answer" data-follow="thank-you final agent contributions industrial_category" data-type="industrial">Corporate/Educational Non-Broadcast (union)</div>
             <div class="answer" data-follow="thank-you final agent contributions nonunion" data-type="nonunion">Non-union</div>            
