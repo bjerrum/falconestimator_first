@@ -156,13 +156,13 @@
 				Fpe.performers[type] = parseInt($(this).val());
 				switch ($(this).attr('name')) {					
 					case 'actor_off_camera':
-						Fpe.next.unshift('mipi_actor_off_camera_lift1', 'mipi_off_camera_tags', 'mipi_off_camera_overtime'); 
+						Fpe.next.unshift('mipi_actor_off_camera_lift1', 'mipi_off_camera_tags'); 
 						break;
 					case 'actor_on_camera':
-						Fpe.next.unshift('mipi_actor_on_camera_lift1', 'mipi_on_camera_tags', 'mipi_travel_days_actor_on_camera', 'mipi_on_camera_overtime');
+						Fpe.next.unshift('mipi_actor_on_camera_lift1', 'mipi_on_camera_tags', 'mipi_travel_days_actor_on_camera');
 						break;
 					case 'extra':
-						Fpe.next.unshift('mipi_on_camera_tags', 'mipi_on_camera_overtime');
+						Fpe.next.unshift('mipi_on_camera_tags');
 						break;
 				}
 				Fpe.next.unshift('mipi_'+type+'_hours', 'mipi_'+type+'_weekend','mipi_'+type+'_nightwork','mipi_'+type+'_travel', 'mipi_'+type+'_overtime');
