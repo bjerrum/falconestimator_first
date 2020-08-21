@@ -32,7 +32,7 @@
 <?php foreach ($performers as $type => $label): ?>
 
 <div class="question" id="mipi_<?php echo $type ?>_weekend">
-	<h4>Weekend or Holiday work for <span><?php echo $label ?></span>?</h4>
+	<h4>Weekend or Holiday work for <span><?php echo $label ?></span>mipi?</h4>
 	<div class="answer" data-follow="tv_<?php echo $type ?>_weekend_days" data-set="<?php echo $type ?>_weekend" data-value="1">Yes</div>
     <div class="answer" data-set="<?php echo $type ?>_weekend" data-value="0">No</div>
 </div>
