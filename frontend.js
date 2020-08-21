@@ -147,25 +147,25 @@
 		});
 
 		$('#mipi_performers .answer').click(function(e) {
-			e.preventDefault();console.log('mipi');
+			e.preventDefault();
 			Fpe.temp = Fpe.next.slice();
 			Fpe.performers = {};
 			$('#mipi_performers input').each(function() {
 			 if (parseInt($(this).val())) {
-				var type = $(this).attr('name');console.log(type);
+				var type = $(this).attr('name');
 				Fpe.performers[type] = parseInt($(this).val());
 				switch ($(this).attr('name')) {					
 					case 'actor_off_camera':
-						Fpe.next.unshift('tv_actor_off_camera_lift1', 'tv_off_camera_tags'); 
+						Fpe.next.unshift('mipi_actor_off_camera_lift1', 'mipi_off_camera_tags', 'mipi_off_camera_overtime'); 
 						break;
 					case 'actor_on_camera':
-						Fpe.next.unshift('tv_actor_on_camera_lift1', 'tv_on_camera_tags', 'tv_travel_days_actor_on_camera');
+						Fpe.next.unshift('mipi_actor_on_camera_lift1', 'mipi_on_camera_tags', 'mipi_travel_days_actor_on_camera', 'mipi_on_camera_overtime');
 						break;
 					case 'extra':
-						Fpe.next.unshift('tv_on_camera_tags');
+						Fpe.next.unshift('mipi_on_camera_tags', 'mipi_on_camera_overtime');
 						break;
 				}
-				Fpe.next.unshift('mipi_'+type+'_hours', 'mipi_'+type+'_weekend','mipi_'+type+'_nightwork','mipi_'+type+'_travel');
+				Fpe.next.unshift('mipi_'+type+'_hours', 'mipi_'+type+'_weekend','mipi_'+type+'_nightwork','mipi_'+type+'_travel', 'mipi_'+type+'_overtime');
 			 }
 			});
 			Fpe.moveNext();

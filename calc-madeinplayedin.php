@@ -72,5 +72,11 @@
 	</div>
 <?php endif; ?>
 
+<div class="question" id="mipi_<?php echo $type ?>_overtime">
+	<h4>Overtime for <span><?php echo $label ?></span>?</h4>
+	<input type="number" name="<?php echo $type ?>_overtime" value="0" placeholder="value in $">
+	<div class="answer">Continue</div>
+</div>
+
 <?php endforeach; ?>
 
