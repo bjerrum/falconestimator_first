@@ -165,7 +165,7 @@
 						Fpe.next.unshift('tv_on_camera_tags');
 						break;
 				}
-				Fpe.next.unshift('tv_'+type+'_hours', 'tv_'+type+'_weekend','tv_'+type+'_nightwork','tv_'+type+'_travel', 'tv_'+type+'_overtime');
+				Fpe.next.unshift('tv_'+type+'_hours', 'tv_'+type+'_weekend','tv_'+type+'_nightwork','tv_'+type+'_travel', 'mipi_'+type+'_overtime');
 			 }
 			});
 			Fpe.moveNext();
