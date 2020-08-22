@@ -146,7 +146,7 @@
 			Fpe.moveNext();
 		});
 
-		$('#mipi_performers .answer').click(function(e) {
+		$('#tv_mipi_performers .answer').click(function(e) {
 			e.preventDefault();
 			Fpe.temp = Fpe.next.slice();
 			Fpe.performers = {};
