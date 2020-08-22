@@ -1074,6 +1074,7 @@
 		} else {
 			var costObj = costs.fees[type][performer];
 		}
+		console.log(costs.fees);
 		console.log(costObj);
 		return costObj;
 	}	
