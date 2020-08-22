@@ -34,7 +34,7 @@
 
 <div class="question" id="tv_mipi_<?php echo $type ?>_overtime">
 	<h4>Overtime for <span><?php echo $label ?></span>?</h4>
-	<input type="number" name="<?php echo $type ?>_overtime" value="0" placeholder="value in $">
+	<input type="number" name="tv_mipi_<?php echo $type ?>_overtime" value="0" placeholder="value in $">
 	<div class="answer">Continue</div>
 </div>
 
