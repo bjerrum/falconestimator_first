@@ -166,7 +166,7 @@
 						break;
 				}
 				Fpe.next.unshift('tv_mipi_'+type+'_hours', 'tv_'+type+'_weekend','tv_'+type+'_nightwork','tv_'+type+'_travel', 'tv_mipi_'+type+'_overtime');
-			 }console.log('tv_mipi_'+type+'_hours');console.log(type);
+			 }console.log('tv_mipi_'+type+'_hours');
 			});
 			Fpe.moveNext();
 		});
