@@ -81,17 +81,20 @@
             <h3>Session Fees for Made-In/Played-In TV Commercial</h3>
             <table class="form-table">
                 <?php
-                FalconEstimator::field('On-Camera Principal', '_mipi_tv_oncam_prin');
-                FalconEstimator::field('Off-Camera Principal', '_mipi_tv_offcam_prin');
-                FalconEstimator::field('Extra Performer', '_mipi_tv_extra_perf');
+                FalconEstimator::field('On-Camera Principal', '_mipi_tv_oncam_prin_prod');
+                FalconEstimator::field('On-Camera Principal', '_mipi_tv_oncam_prin_full');
+                FalconEstimator::field('Off-Camera Principal', '_mipi_tv_offcam_prin_prod');
+                FalconEstimator::field('Off-Camera Principal', '_mipi_tv_offcam_prin_full');
+                FalconEstimator::field('Extra Performer', '_mipi_tv_extra_perf_prod');
+                FalconEstimator::field('Extra Performer', '_mipi_tv_extra_perf_full');
                 ?>
             </table>
 
             <h3>Session Fees for Made-In/Played-In Radio Commercial</h3>
             <table class="form-table">
                 <?php
-                FalconEstimator::field('Actor', '_mipi_radio_actor');
-                FalconEstimator::field('Announcer', '_mipi_radio_announcer');                
+                FalconEstimator::field('Radio Actor/announcer', '_mipi_radio_actor_prod');
+                FalconEstimator::field('Radio Actor/announcer', '_mipi_radio_actor_full');
                 ?>
             </table>
 
