@@ -141,7 +141,7 @@
 						break;
 				}
 				Fpe.next.unshift('tv_'+type+'_hours', 'tv_'+type+'_weekend','tv_'+type+'_nightwork','tv_'+type+'_travel');
-			 }
+			 }console.log('tv_'+type+'_hours');
 			});
 			Fpe.moveNext();
 		});
