@@ -141,7 +141,7 @@
 						break;
 				}
 				Fpe.next.unshift('tv_'+type+'_hours', 'tv_'+type+'_weekend','tv_'+type+'_nightwork','tv_'+type+'_travel');
-			 }console.log('tv_'+type+'_hours');
+			 }
 			});
 			Fpe.moveNext();
 		});
@@ -166,7 +166,7 @@
 						break;
 				}
 				Fpe.next.unshift('tv_mipi_'+type+'_hours', 'tv_'+type+'_weekend','tv_'+type+'_nightwork','tv_'+type+'_travel', 'tv_mipi_'+type+'_overtime');
-			 }console.log('tv_mipi_'+type+'_hours');
+			 }
 			});
 			Fpe.moveNext();
 		});
@@ -1046,6 +1046,7 @@
 
 	Fpe.getCost = function(selector) {
 		//return Math.round(parseFloat(fpeOptions[selector])*100)/100;
+		console.log(fpeOptions);
 		return parseFloat(fpeOptions[selector]);
 	}
 
