@@ -150,7 +150,7 @@
 			e.preventDefault();
 			Fpe.temp = Fpe.next.slice();
 			Fpe.performers = {};
-			$('#mipi_performers input').each(function() {
+			$('#tv_mipi_performers input').each(function() {
 			 if (parseInt($(this).val())) {
 				var type = $(this).attr('name');
 				Fpe.performers[type] = parseInt($(this).val());
@@ -166,8 +166,8 @@
 						break;
 				}
 				Fpe.next.unshift('tv_mipi_'+type+'_hours', 'tv_'+type+'_weekend','tv_'+type+'_nightwork','tv_'+type+'_travel', 'tv_mipi_'+type+'_overtime');
-			 }
-			});console.log('tv_mipi_'+type+'_hours');
+			 }console.log('tv_mipi_'+type+'_hours');
+			});
 			Fpe.moveNext();
 		});
 
