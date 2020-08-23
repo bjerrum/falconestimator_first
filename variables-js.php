@@ -284,7 +284,7 @@ var costs = {
 				made_in_played_in: {
 				    'oncam_prod': <?php echo get_option('_mipi_tv_oncam_prin_prod', 570.00) ?>,
 				    'oncam_full': <?php echo get_option('_mipi_tv_oncam_prin_full', 570.00) ?>,
-				} 
+				},
 		  },
 		  principal_off: {
 			 session: <?php echo get_option('_fpe_principal_actor_off_camera', 505.05) ?>,
@@ -373,7 +373,7 @@ var costs = {
 				made_in_played_in: {					
 				    'offcam_prod': <?php echo get_option('_mipi_tv_offcam_prin_prod', 428.00) ?>,
 				    'offcam_full': <?php echo get_option('_mipi_tv_offcam_prin_full', 428.00) ?>,
-				}
+				},
 			 } 
 		  },
 		  stunt_performer: {session: <?php echo get_option('_fpe_principal_actor_on_camera', 671.7) ?>},
@@ -382,10 +382,10 @@ var costs = {
 		  dancer: {session: <?php echo get_option('_fpe_principal_actor_on_camera', 671.7) ?>},
 		  singer: {session: <?php echo get_option('_fpe_principal_actor_off_camera', 505.05) ?>},
 		  extra: {session: <?php echo get_option('_fpe_extra_actor', 366,37) ?>},
-		  made_in_played_in: {			 
+		  made_in_played_in: {
 		      'extra_prod': <?php echo get_option('_mipi_tv_extra_perf_prod', 315.00) ?>,
 		      'extra_full': <?php echo get_option('_mipi_tv_extra_perf_full', 315.00) ?>,
-		  }
+		  },
 	   },
 	   radio: {
 		  announcer: {
@@ -808,7 +808,7 @@ var costs = {
 		  storecast: {
 			 '3': <?php echo get_option('_fpe_psa_storecast_3', 425.50) ?>,
 			 '6': <?php echo get_option('_fpe_psa_storecast_6', 851.00) ?>,
-		  }
+		  },
 	   }
     }
 };
