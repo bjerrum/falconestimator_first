@@ -12,7 +12,7 @@
 
 <div class="question" id="radio_made_in_played_in">
 	<h4>Is this a Made-in/Played-in (local)?</h4>
-	<div class="answer" data-set="made_in_played_in" data-value="1" data-follow="thank-you final agent contributions radio_mipi-stop radio_multitracking radio_sweetening radio_prod_full_term">Yes</div>
+	<div class="answer" data-set="made_in_played_inx" data-value="1" data-follow="thank-you final agent contributions radio_mipi-stop radio_multitracking radio_sweetening radio_prod_full_term">Yes</div>
 	<div class="answer" data-set="made_in_played_in" data-value="0" data-follow="thank-you final agent contributions radio-stop radio_multitracking radio_sweetening radio_performers">No</div>
 </div>
 
