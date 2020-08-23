@@ -288,7 +288,7 @@ var costs = {
 			 'offcam_full': <?php echo get_option('_mipi_tv_offcam_prin_full', 428.00) ?>,
 			 'extra_prod': <?php echo get_option('_mipi_tv_extra_perf_prod', 315.00) ?>,
 			 'extra_full': <?php echo get_option('_mipi_tv_extra_perf_full', 315.00) ?>,
-		  }
+		  },
 			 } 
 		  },
 		  principal_off: {
