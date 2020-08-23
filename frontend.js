@@ -509,6 +509,8 @@
 				cost = cost * hours;
 			 }
 			 console.log(Fpe.options);
+			 console.log(performer);
+			 console.log(costObj);
 			 if (Fpe.type == 'radio' && $.inArray(performer, ['announcer', 'solo_duo', 'group_3', 'group_6', 'group_9']) >= 0) {
 				if (Fpe.options['made_in_played_in']) {
 					if(Fpe.prod_full == 'full_term')
