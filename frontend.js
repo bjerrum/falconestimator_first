@@ -499,13 +499,7 @@
 			 		cost = count*costObj.broadcast.made_in_played_in.oncam_full;
 			 	if(Fpe.prod_full == 'prod_only')
 			 		cost = count*costObj.broadcast.made_in_played_in.oncam_prod;
-			 }
-			 if(Fpe.type == 'radio' && Fpe.mipi == true){
-			 	if(Fpe.prod_full == 'full_term')
-			 		cost = count*costObj.broadcast.made_in_played_in.oncam_full;
-			 	if(Fpe.prod_full == 'prod_only')
-			 		cost = count*costObj.broadcast.made_in_played_in.oncam_prod;
-			 }
+			 }			 
 
 			 console.log(cost);
 			 var maxHours = performer == 'actor_off_camera' ? 2 : 8;
@@ -516,6 +510,12 @@
 			 }
 			 console.log(Fpe.options);
 			 if (Fpe.type == 'radio' && $.inArray(performer, ['announcer', 'solo_duo', 'group_3', 'group_6', 'group_9']) >= 0) {
+				if (Fpe.options['made_in_played_in']) {
+					if(Fpe.prod_full == 'full_term')
+			 			cost = count*costObj.broadcast.made_in_played_in.oncam_full;
+				 	if(Fpe.prod_full == 'prod_only')
+				 		cost = count*costObj.broadcast.made_in_played_in.oncam_prod;
+				}
 				if (Fpe.options['radio_multitracking']) {
 					cost - costObj.multitracking;
 				}
