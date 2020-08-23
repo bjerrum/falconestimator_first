@@ -806,14 +806,7 @@ var costs = {
 			 '3': <?php echo get_option('_fpe_psa_storecast_3', 425.50) ?>,
 			 '6': <?php echo get_option('_fpe_psa_storecast_6', 851.00) ?>,
 		  },
-		  made_in_played_in: {
-			 'oncam_prod': <?php echo get_option('_mipi_tv_oncam_prin_prod', 570.00) ?>,
-			 'oncam_full': <?php echo get_option('_mipi_tv_oncam_prin_full', 570.00) ?>,
-			 'offcam_prod': <?php echo get_option('_mipi_tv_offcam_prin_prod', 428.00) ?>,
-			 'offcam_full': <?php echo get_option('_mipi_tv_offcam_prin_full', 428.00) ?>,
-			 'extra_prod': <?php echo get_option('_mipi_tv_extra_perf_prod', 315.00) ?>,
-			 'extra_full': <?php echo get_option('_mipi_tv_extra_perf_full', 315.00) ?>,
-		  }
+		  
 	   }
     }
 };
