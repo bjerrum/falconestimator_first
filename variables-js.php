@@ -381,7 +381,7 @@ var costs = {
 		  speciality_act: {session: <?php echo get_option('_fpe_principal_actor_on_camera', 671.7) ?>},
 		  dancer: {session: <?php echo get_option('_fpe_principal_actor_on_camera', 671.7) ?>},
 		  singer: {session: <?php echo get_option('_fpe_principal_actor_off_camera', 505.05) ?>},
-		  extra: {session: <?php echo get_option('_fpe_extra_actor', 366,37) ?>}.
+		  extra: {session: <?php echo get_option('_fpe_extra_actor', 366,37) ?>},
 		  made_in_played_in: {			 
 		      'extra_prod': <?php echo get_option('_mipi_tv_extra_perf_prod', 315.00) ?>,
 		      'extra_full': <?php echo get_option('_mipi_tv_extra_perf_full', 315.00) ?>,
