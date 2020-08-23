@@ -487,12 +487,12 @@
 
 			 var cost = count*costObj.session;
 			 console.log(cost);
+			 console.log(Fpe.prod_full);
 			 if(Fpe.mipi == true){
 			 	if(Fpe.prod_full == 'full_term')
 			 		cost = count*costObj.broadcast.made_in_played_in.oncam_full;
 			 	if(Fpe.prod_full == 'prod_only')
 			 		cost = count*costObj.broadcast.made_in_played_in.oncam_prod;
-			 	
 			 }
 			 console.log(cost);
 			 var maxHours = performer == 'actor_off_camera' ? 2 : 8;
