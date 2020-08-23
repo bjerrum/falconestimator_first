@@ -501,7 +501,7 @@
 			 		cost = count*costObj.broadcast.made_in_played_in.oncam_prod;
 			 }			 
 
-			 console.log(cost);
+			 
 			 var maxHours = performer == 'actor_off_camera' ? 2 : 8;
 			 
 			 if (Fpe.type == 'tv' && Fpe.options[key+'_hours']) {
@@ -544,6 +544,7 @@
 					cost += c*costObj.session
 				}
 			 }
+			 console.log(cost);
 			 Fpe.putTotal({
 				text: Fpe.performers[key]+'x '+Fpe.labels[key],
 				value: cost,
