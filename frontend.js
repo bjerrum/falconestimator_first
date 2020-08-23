@@ -471,7 +471,7 @@
 			for(var key in Fpe.performers) {
 			 var performer = key;
 			 var count = Fpe.performers[key];
-			 
+			 console.log(performer);
 			 var costObj = Fpe.getPerformerObject(performer);
 
 			 if (performer == 'creative_session' && count == 0.5) {
