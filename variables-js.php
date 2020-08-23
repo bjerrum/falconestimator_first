@@ -198,7 +198,7 @@ var costs = {
     fees: {
 	   tv: {
 		  principal_on: {
-			 session: <?php echo get_option('_fpe_principal_actor_on_camera', 671.7) ?>,
+			 session: <?php echo get_option('_fpe_principal_actor_on_camera', 671.71) ?>,
 			 broadcast: {
 				wildspot: {
 				    unit_2_25: <?php echo get_option('_fpe_tv_wild_spot_on_camera_2_25', 22.99) ?>,

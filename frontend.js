@@ -127,6 +127,7 @@
 			Fpe.temp = Fpe.next.slice();
 			Fpe.performers = {};
 			Fpe.mipi = false;
+			Fpe.prod_full = null;
 			$('#tv_performers input').each(function() {
 			 if (parseInt($(this).val())) {
 				var type = $(this).attr('name');
