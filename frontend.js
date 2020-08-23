@@ -63,8 +63,6 @@
 
 		$('#tv_prod_full_term .answer').click(function() {
 			Fpe.prod_full = $(this).data('value');
-			console.log(Fpe.prod_full);
-			console.log($(this).data('value'));
 		})
 
 		$('#tv_broadcast .answer.special').click(function() {
@@ -490,7 +488,10 @@
 			 var cost = count*costObj.session;
 			 console.log(cost);
 			 if(Fpe.mipi == true){
-			 	cost = count*costObj.broadcast.made_in_played_in.oncam_full;
+			 	if(Fpe.prod_full = 'full_term')
+			 		cost = count*costObj.broadcast.made_in_played_in.oncam_full;
+			 	if(Fpe.prod_full = 'prod_only')
+			 		cost = count*costObj.broadcast.made_in_played_in.oncam_prod;
 			 	console.log(cost);
 			 }
 			 var maxHours = performer == 'actor_off_camera' ? 2 : 8;

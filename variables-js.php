@@ -283,7 +283,7 @@ var costs = {
 				theatrical: <?php echo get_option('_fpe_tv_broadcast_theatrical_on', 671.70) ?>,
 				made_in_played_in: {
 				    'oncam_prod': <?php echo get_option('_mipi_tv_oncam_prin_prod', 570.00) ?>,
-				    'oncam_full': <?php echo get_option('_mipi_tv_oncam_prin_full', 570.00) ?>,
+				    'oncam_full': <?php echo get_option('_mipi_tv_oncam_prin_full', 498.00) ?>,
 				},
 			 } 
 		  },
@@ -373,7 +373,7 @@ var costs = {
 				theatrical: <?php echo get_option('_fpe_tv_broadcast_theatrical_off', 505.05) ?>,
 				made_in_played_in: {				    
 				    'offcam_prod': <?php echo get_option('_mipi_tv_offcam_prin_prod', 428.00) ?>,
-				    'offcam_full': <?php echo get_option('_mipi_tv_offcam_prin_full', 428.00) ?>,
+				    'offcam_full': <?php echo get_option('_mipi_tv_offcam_prin_full', 375.00) ?>,
 				},
 			 } 
 		  },
@@ -385,7 +385,7 @@ var costs = {
 		  extra: {session: <?php echo get_option('_fpe_extra_actor', 366,37) ?>},
 		  made_in_played_in_extra: {
 		      'extra_prod': <?php echo get_option('_mipi_tv_extra_perf_prod', 315.00) ?>,
-		      'extra_full': <?php echo get_option('_mipi_tv_extra_perf_full', 315.00) ?>,
+		      'extra_full': <?php echo get_option('_mipi_tv_extra_perf_full', 276.00) ?>,
 		  },
 	   },
 	   radio: {
