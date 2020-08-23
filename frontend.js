@@ -492,8 +492,9 @@
 			 		cost = count*costObj.broadcast.made_in_played_in.oncam_full;
 			 	if(Fpe.prod_full = 'prod_only')
 			 		cost = count*costObj.broadcast.made_in_played_in.oncam_prod;
-			 	console.log(cost);
+			 	
 			 }
+			 console.log(cost);
 			 var maxHours = performer == 'actor_off_camera' ? 2 : 8;
 			 
 			 if (Fpe.type == 'tv' && Fpe.options[key+'_hours']) {
