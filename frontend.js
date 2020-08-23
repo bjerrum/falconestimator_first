@@ -476,7 +476,7 @@
 			 console.log(performer);
 			 console.log(Fpe.options);
 			 var costObj = Fpe.getPerformerObject(performer);
-
+			 console.log(costObj);
 			 if (performer == 'creative_session' && count == 0.5) {
 				count = 1;
 			 }
