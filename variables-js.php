@@ -283,7 +283,7 @@ var costs = {
 				theatrical: <?php echo get_option('_fpe_tv_broadcast_theatrical_on', 671.70) ?>,
 				made_in_played_in: {
 				    'oncam_prod': <?php echo get_option('_mipi_tv_oncam_prin_prod', 570.00) ?>,
-				    'oncam_full': <?php echo get_option('_mipi_tv_oncam_prin_full', 570.00) ?>,
+				 	'oncam_full': <?php echo get_option('_mipi_tv_oncam_prin_full', 570.00) ?>,
 				} 
 		  },
 		  principal_off: {
