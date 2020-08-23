@@ -122,6 +122,7 @@
 			e.preventDefault();
 			Fpe.temp = Fpe.next.slice();
 			Fpe.performers = {};
+			Fpe.mipi = false;
 			$('#tv_performers input').each(function() {
 			 if (parseInt($(this).val())) {
 				var type = $(this).attr('name');
@@ -150,6 +151,7 @@
 			e.preventDefault();
 			Fpe.temp = Fpe.next.slice();
 			Fpe.performers = {};
+			Fpe.mipi = true;
 			$('#tv_mipi_performers input').each(function() {
 			 if (parseInt($(this).val())) {
 				var type = $(this).attr('name');
@@ -472,6 +474,7 @@
 			 var performer = key;
 			 var count = Fpe.performers[key];
 			 console.log(performer);
+			 console.log(Fpe.options);
 			 var costObj = Fpe.getPerformerObject(performer);
 
 			 if (performer == 'creative_session' && count == 0.5) {
@@ -479,6 +482,11 @@
 			 }
 
 			 var cost = count*costObj.session;
+			 console.log(cost);
+			 if(Fpe.mipi == true;){
+			 	cost = count*costObj.made_in_played_in.oncam_full;
+			 	console.log(cost);
+			 }
 			 var maxHours = performer == 'actor_off_camera' ? 2 : 8;
 			 
 			 if (Fpe.type == 'tv' && Fpe.options[key+'_hours']) {
