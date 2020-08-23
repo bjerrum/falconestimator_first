@@ -65,7 +65,7 @@
 			Fpe.prod_full = $(this).data('set');
 			console.log(Fpe.prod_full);
 			console.log($(this).data('set'));
-		}
+		})
 
 		$('#tv_broadcast .answer.special').click(function() {
 			Fpe.broadcast = [];
