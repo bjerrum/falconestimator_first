@@ -514,9 +514,9 @@
 			 if (Fpe.type == 'radio' && $.inArray(performer, ['announcer', 'solo_duo', 'group_3', 'group_6', 'group_9']) >= 0) {
 				if (Fpe.options['made_in_played_in']) {
 					if(Fpe.prod_full == 'full_term')
-			 			cost = count*costObj.broadcast.made_in_played_in.oncam_full;
+			 			cost = count*costObj.broadcast.made_in_played_in.full;
 				 	if(Fpe.prod_full == 'prod_only')
-				 		cost = count*costObj.broadcast.made_in_played_in.oncam_prod;
+				 		cost = count*costObj.broadcast.made_in_played_in.prod;
 				}
 				if (Fpe.options['radio_multitracking']) {
 					cost - costObj.multitracking;
