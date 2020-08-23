@@ -65,6 +65,10 @@
 			Fpe.prod_full = $(this).data('value');
 		})
 
+		$('#radio_prod_full_term .answer').click(function() {
+			Fpe.prod_full = $(this).data('value');
+		})
+
 		$('#tv_broadcast .answer.special').click(function() {
 			Fpe.broadcast = [];
 			Fpe.temp = Fpe.next.slice();
@@ -201,6 +205,7 @@
 			e.preventDefault();
 			Fpe.temp = Fpe.next.slice();
 			Fpe.performers = {};
+			Fpe.mipi = true;
 			$('#radio_mipi_performers input').each(function() {
 			 if (parseInt($(this).val())) {
 				var type = $(this).attr('name');
@@ -489,12 +494,19 @@
 			 var cost = count*costObj.session;
 			 console.log(cost);
 			 console.log(Fpe.prod_full);
-			 if(Fpe.mipi == true){
+			 if(Fpe.type == 'tv' && Fpe.mipi == true){
 			 	if(Fpe.prod_full == 'full_term')
 			 		cost = count*costObj.broadcast.made_in_played_in.oncam_full;
 			 	if(Fpe.prod_full == 'prod_only')
 			 		cost = count*costObj.broadcast.made_in_played_in.oncam_prod;
 			 }
+			 if(Fpe.type == 'radio' && Fpe.mipi == true){
+			 	if(Fpe.prod_full == 'full_term')
+			 		cost = count*costObj.broadcast.made_in_played_in.oncam_full;
+			 	if(Fpe.prod_full == 'prod_only')
+			 		cost = count*costObj.broadcast.made_in_played_in.oncam_prod;
+			 }
+
 			 console.log(cost);
 			 var maxHours = performer == 'actor_off_camera' ? 2 : 8;
 			 
@@ -502,6 +514,7 @@
 				var hours = Fpe.options[key+'_hours']/maxHours;
 				cost = cost * hours;
 			 }
+			 console.log(Fpe.options);
 			 if (Fpe.type == 'radio' && $.inArray(performer, ['announcer', 'solo_duo', 'group_3', 'group_6', 'group_9']) >= 0) {
 				if (Fpe.options['radio_multitracking']) {
 					cost - costObj.multitracking;

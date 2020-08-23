@@ -271,6 +271,10 @@ var costs = {
 				},
 				demo: 503.90,
 				theatrical: 671.70,
+				made_in_played_in: {
+				    'oncam_prod': 570.00,
+				    'oncam_full': 498.00
+				},
 			 } 
 		  },
 		  principal_off: {
@@ -357,6 +361,10 @@ var costs = {
 				},
 				demo: 503.90,
 				theatrical: 505.05,
+				made_in_played_in: {
+				    'offcam_prod': 428.00,
+				    'offcam_full': 375.00
+				},
 			 } 
 		  },
 		  stunt_performer: {session: 671.70},
@@ -364,7 +372,11 @@ var costs = {
 		  speciality_act: {session: 671.7},
 		  dancer: {session: 671.7},
 		  singer: {session: 505.05},
-		  extra: {session: 366.35}
+		  extra: {session: 366.35},
+		  made_in_played_in_extra: {
+		      'extra_prod': 315.00,
+		      'extra_full': 276.00
+		  },
 	   },
 	   radio: {
 		  announcer: {

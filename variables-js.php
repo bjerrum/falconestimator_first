@@ -372,8 +372,8 @@ var costs = {
 				demo: <?php echo get_option('_fpe_tv_broadcast_demo_off', 503.90) ?>,
 				theatrical: <?php echo get_option('_fpe_tv_broadcast_theatrical_off', 505.05) ?>,
 				made_in_played_in: {				    
-				    'offcam_prod': <?php echo get_option('_mipi_tv_offcam_prin_prod', 428.00) ?>,
-				    'offcam_full': <?php echo get_option('_mipi_tv_offcam_prin_full', 375.00) ?>,
+				    'offcam_prod': <?php echo get_option('_fpe_mipi_tv_offcam_prin_prod', 428.00) ?>,
+				    'offcam_full': <?php echo get_option('_fpe_mipi_tv_offcam_prin_full', 375.00) ?>,
 				},
 			 } 
 		  },
@@ -384,8 +384,8 @@ var costs = {
 		  singer: {session: <?php echo get_option('_fpe_principal_actor_off_camera', 505.05) ?>},
 		  extra: {session: <?php echo get_option('_fpe_extra_actor', 366,37) ?>},
 		  made_in_played_in_extra: {
-		      'extra_prod': <?php echo get_option('_mipi_tv_extra_perf_prod', 315.00) ?>,
-		      'extra_full': <?php echo get_option('_mipi_tv_extra_perf_full', 276.00) ?>,
+		      'extra_prod': <?php echo get_option('_fpe_mipi_tv_extra_perf_prod', 315.00) ?>,
+		      'extra_full': <?php echo get_option('_fpe_mipi_tv_extra_perf_full', 276.00) ?>,
 		  },
 	   },
 	   radio: {
@@ -462,7 +462,10 @@ var costs = {
 				    '13_week': <?php echo get_option('_fpe_radio_single_announcer_13w', 205.45) ?>,
 				    '1_year': <?php echo get_option('_fpe_radio_single_announcer_1y', 616.45) ?>,
 				},
-				made_in_played_in: <?php echo get_option('_fpe_radio_mipi_actor_announcer_announcer', 205.45) ?>,
+				made_in_played_in: {				    
+				    'prod': <?php echo get_option('_fpe_mipi_radio_actor_prod', 253.00) ?>,
+				    'full': <?php echo get_option('_fpe_mipi_radio_actor_full', 221.00) ?>,
+				},
 				demo: <?php echo get_option('_fpe_radio_announcer_demo', 205.45) ?>,
 				regional: <?php echo get_option('_fpe_radio_announcer_regional', 976.20) ?>,
 				program: <?php echo get_option('_fpe_radio_announcer_program', 976.20) ?>,
@@ -538,7 +541,10 @@ var costs = {
 				    '8week': <?php echo get_option('_fpe_radio_solo_duo_newmedia2_8_week', 447.15) ?>,
 				    '1year': <?php echo get_option('_fpe_radio_solo_duo_newmedia2_1_year', 1192.40) ?>,
 				},
-				made_in_played_in: <?php echo get_option('_fpe_radio_mipi_actor_announcer_solo_duo', 205.45) ?>,
+				made_in_played_in: {				    
+				    'prod': <?php echo get_option('_fpe_mipi_radio_actor_prod', 253.00) ?>,
+				    'full': <?php echo get_option('_fpe_mipi_radio_actor_full', 221.00) ?>,
+				},
 				regional: <?php echo get_option('_fpe_radio_solo_duo_regional', 976.20) ?>,
 				program: <?php echo get_option('_fpe_radio_solo_duo_program', 976.20) ?>,
 				local: <?php echo get_option('_fpe_radio_solo_duo_local', 324.00) ?>,
@@ -613,7 +619,10 @@ var costs = {
 				    '8week': <?php echo get_option('_fpe_radio_group_3_newmedia2_8_week', 329.40) ?>,
 				    '1year': <?php echo get_option('_fpe_radio_group_3_newmedia2_1_year', 878.40) ?>,
 				},
-				made_in_played_in: <?php echo get_option('_fpe_radio_mipi_actor_announcer_group_3', 205.45) ?>,
+				made_in_played_in: {				    
+				    'prod': <?php echo get_option('_fpe_mipi_radio_actor_prod', 253.00) ?>,
+				    'full': <?php echo get_option('_fpe_mipi_radio_actor_full', 221.00) ?>,
+				},
 				regional: <?php echo get_option('_fpe_radio_group_3_regional', 976.20) ?>,
 				program: <?php echo get_option('_fpe_radio_group_3_program', 457.60) ?>,
 				local: <?php echo get_option('_fpe_radio_group_3_local', 324.00) ?>,
@@ -688,7 +697,10 @@ var costs = {
 				    '8week': <?php echo get_option('_fpe_radio_group_6_newmedia2_8_week', 291.55) ?>,
 				    '1year': <?php echo get_option('_fpe_radio_group_6_newmedia2_1_year', 777.40) ?>,
 				},
-				made_in_played_in: <?php echo get_option('_fpe_radio_mipi_actor_announcer_group_6', 205.45) ?>,
+				made_in_played_in: {				    
+				    'prod': <?php echo get_option('_fpe_mipi_radio_actor_prod', 253.00) ?>,
+				    'full': <?php echo get_option('_fpe_mipi_radio_actor_full', 221.00) ?>,
+				},
 				regional: <?php echo get_option('_fpe_radio_group_6_regional', 878.65) ?>,
 				program: <?php echo get_option('_fpe_radio_group_6_program', 457.60) ?>,
 				local: <?php echo get_option('_fpe_radio_group_6_local', 324.00) ?>,
@@ -763,7 +775,10 @@ var costs = {
 				    '8week': <?php echo get_option('_fpe_radio_group_9_newmedia2_8_week', 258.60) ?>,
 				    '1year': <?php echo get_option('_fpe_radio_group_9_newmedia2_1_year', 689.6) ?>0
 				},
-				made_in_played_in: <?php echo get_option('_fpe_radio_mipi_actor_announcer_group_9', 205.45) ?>,
+				made_in_played_in: {				    
+				    'prod': <?php echo get_option('_fpe_mipi_radio_actor_prod', 253.00) ?>,
+				    'full': <?php echo get_option('_fpe_mipi_radio_actor_full', 221.00) ?>,
+				},
 				regional: <?php echo get_option('_fpe_radio_group_9_regional', 790.20) ?>,
 				program: <?php echo get_option('_fpe_radio_group_9_program', 457.60) ?>,
 				local: <?php echo get_option('_fpe_radio_group_9_local', 324.00) ?>,
