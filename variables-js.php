@@ -374,7 +374,7 @@ var costs = {
 				    'offcam_prod': <?php echo get_option('_mipi_tv_offcam_prin_prod', 428.00) ?>,
 				    'offcam_full': <?php echo get_option('_mipi_tv_offcam_prin_full', 428.00) ?>,
 				},
-			 } 
+			 },
 		  },
 		  stunt_performer: {session: <?php echo get_option('_fpe_principal_actor_on_camera', 671.7) ?>},
 		  pilot: {session: <?php echo get_option('_fpe_pilot', 795.5) ?>},
