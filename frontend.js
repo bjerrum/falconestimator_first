@@ -483,7 +483,7 @@
 
 			 var cost = count*costObj.session;
 			 console.log(cost);
-			 if(Fpe.mipi == true;){
+			 if(Fpe.mipi == true){
 			 	cost = count*costObj.made_in_played_in.oncam_full;
 			 	console.log(cost);
 			 }
