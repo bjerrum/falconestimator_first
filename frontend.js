@@ -62,9 +62,9 @@
 		});
 
 		$('#tv_prod_full_term .answer').click(function() {
-			Fpe.prod_full = $(this).val();
+			Fpe.prod_full = $(this).data('value');
 			console.log(Fpe.prod_full);
-			console.log($(this).val());
+			console.log($(this).data('value'));
 		})
 
 		$('#tv_broadcast .answer.special').click(function() {
