@@ -481,7 +481,7 @@
 		if (Fpe.type == 'radio' || Fpe.type == 'tv') {
 			// performers session fees for tv and radio
 			for(var key in Fpe.performers) {
-				var performer = ;
+				var performer = key;
 				var count = Fpe.performers[key];
 				console.log(performer);
 				console.log(Fpe.options);
