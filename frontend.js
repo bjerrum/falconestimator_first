@@ -538,7 +538,7 @@
 				 
 				if (Fpe.options[performer+'_travel']) {
 					//cost += parseInt(Fpe.options[performer+'_travel']);
-					var reimbursements = parseInt(Fpe.options[performer+'_travel']);
+					var reimbursements += parseInt(Fpe.options[performer+'_travel']);
 				}
 				
 				if (performer == 'actor_on_camera' || performer == 'stunt_performer') {
