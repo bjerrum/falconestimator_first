@@ -481,76 +481,80 @@
 		if (Fpe.type == 'radio' || Fpe.type == 'tv') {
 			// performers session fees for tv and radio
 			for(var key in Fpe.performers) {
-			 var performer = key;
-			 var count = Fpe.performers[key];
-			 console.log(performer);
-			 console.log(Fpe.options);
-			 var costObj = Fpe.getPerformerObject(performer);
-			 console.log(costObj);
-			 if (performer == 'creative_session' && count == 0.5) {
-				count = 1;
-			 }
+				var performer = key;
+				var count = Fpe.performers[key];
+				console.log(performer);
+				console.log(Fpe.options);
+				var costObj = Fpe.getPerformerObject(performer);
+				 console.log(costObj);
+				if (performer == 'creative_session' && count == 0.5) {
+					count = 1;
+				}
 
-			 var cost = count*costObj.session;
-			 console.log(cost);
-			 console.log(Fpe.prod_full);
-			 if(Fpe.type == 'tv' && Fpe.mipi == true){
-			 	if(Fpe.prod_full == 'full_term')
-			 		cost = count*costObj.broadcast.made_in_played_in.oncam_full;
-			 	if(Fpe.prod_full == 'prod_only')
-			 		cost = count*costObj.broadcast.made_in_played_in.oncam_prod;
-			 }			 
-
-			 
-			 var maxHours = performer == 'actor_off_camera' ? 2 : 8;
-			 
-			 if (Fpe.type == 'tv' && Fpe.options[key+'_hours']) {
-				var hours = Fpe.options[key+'_hours']/maxHours;
-				cost = cost * hours;
-			 }
-			 console.log(Fpe.options);
-			 console.log(performer);
-			 console.log(costObj);
-			 if (Fpe.type == 'radio' && $.inArray(performer, ['announcer', 'solo_duo', 'group_3', 'group_6', 'group_9']) >= 0) {
-				if (Fpe.options['made_in_played_in']) {
+				var cost = count*costObj.session;
+				console.log(cost);
+				console.log(Fpe.prod_full);
+				if(Fpe.type == 'tv' && Fpe.mipi == true){
 					if(Fpe.prod_full == 'full_term')
-			 			cost = count*costObj.broadcast.made_in_played_in.full;
-				 	if(Fpe.prod_full == 'prod_only')
-				 		cost = count*costObj.broadcast.made_in_played_in.prod;
+						cost = count*costObj.broadcast.made_in_played_in.oncam_full;
+					if(Fpe.prod_full == 'prod_only')
+						cost = count*costObj.broadcast.made_in_played_in.oncam_prod;
+				}			 
+
+				
+				var maxHours = performer == 'actor_off_camera' ? 2 : 8;
+				
+				if (Fpe.type == 'tv' && Fpe.options[key+'_hours']) {
+					var hours = Fpe.options[key+'_hours']/maxHours;
+					cost = cost * hours;
 				}
-				if (Fpe.options['radio_multitracking']) {
-					cost - costObj.multitracking;
+				console.log(Fpe.options);
+				console.log(performer);
+				console.log(costObj);
+				if (Fpe.type == 'radio' && $.inArray(performer, ['announcer', 'solo_duo', 'group_3', 'group_6', 'group_9']) >= 0) {
+					if (Fpe.options['made_in_played_in']) {
+						if(Fpe.prod_full == 'full_term')
+				 			cost = count*costObj.broadcast.made_in_played_in.full;
+					 	if(Fpe.prod_full == 'prod_only')
+					 		cost = count*costObj.broadcast.made_in_played_in.prod;
+					}
+					if (Fpe.options['radio_multitracking']) {
+						cost - costObj.multitracking;
+					}
+					if (Fpe.options['radio_sweetening']) {
+						cost *= 2;
+					}
 				}
-				if (Fpe.options['radio_sweetening']) {
-					cost *= 2;
+				if (Fpe.options[performer+'_lift2']) {
+					cost += costObj.session;
 				}
-			 }
-			 if (Fpe.options[performer+'_lift2']) {
-				cost += costObj.session;
-			 }
-			 if (Fpe.options[performer+'_weekend'] || Fpe.options[performer+'_weekend_days']) {
-				cost += costObj.session * 1.5;
-			 }
-			 if (Fpe.options[performer+'_nightwork'] && Fpe.options[performer+'_nightwork_hours']) {
-				var perHour = costObj.session / maxHours;
-				cost += Fpe.options[performer+'_nightwork_hours'] * perHour * 1.1;
-			 }
-			 if (Fpe.options[performer+'_travel']) {
-				cost += parseInt(Fpe.options[performer+'_travel']);
-			 }
-			 if (performer == 'actor_on_camera' || performer == 'stunt_performer') {
-				if (Fpe.options[performer+'_travel_days']) {
-					var c = parseInt(Fpe.options[performer+'_travel_days']);
-					cost += c*costObj.session
+				if (Fpe.options[performer+'_weekend'] || Fpe.options[performer+'_weekend_days']) {
+					cost += costObj.session * 1.5;
 				}
-			 }
-			 console.log(cost);
-			 Fpe.putTotal({
-				text: Fpe.performers[key]+'x '+Fpe.labels[key],
-				value: cost,
-				el: sessionFees,
-			 });
-			 sessionFeesTotal += cost;
+				if (Fpe.options[performer+'_nightwork'] && Fpe.options[performer+'_nightwork_hours']) {
+					var perHour = costObj.session / maxHours;
+					cost += Fpe.options[performer+'_nightwork_hours'] * perHour * 1.1;
+				}
+				 
+				if (Fpe.options[performer+'_travel']) {
+					//cost += parseInt(Fpe.options[performer+'_travel']);
+
+				}
+				
+				if (performer == 'actor_on_camera' || performer == 'stunt_performer') {
+					if (Fpe.options[performer+'_travel_days']) {
+						var c = parseInt(Fpe.options[performer+'_travel_days']);
+						cost += c*costObj.session
+					}
+				}
+				console.log(cost);
+				console.log(Fpe.performers[key]+'x '+Fpe.labels[key]);
+				Fpe.putTotal({
+					text: Fpe.performers[key]+'x '+Fpe.labels[key],
+					value: cost,
+					el: sessionFees,
+				});
+				sessionFeesTotal += cost;
 			}
 
 			// broadcast for tv and radio
