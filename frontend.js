@@ -481,7 +481,7 @@
 		if (Fpe.type == 'radio' || Fpe.type == 'tv') {
 			// performers session fees for tv and radio
 			for(var key in Fpe.performers) {
-				var performer = key;
+				var performer = ;
 				var count = Fpe.performers[key];
 				console.log(performer);
 				console.log(Fpe.options);
@@ -538,7 +538,7 @@
 				 
 				if (Fpe.options[performer+'_travel']) {
 					//cost += parseInt(Fpe.options[performer+'_travel']);
-
+					var reimbursements = parseInt(Fpe.options[performer+'_travel']);
 				}
 				
 				if (performer == 'actor_on_camera' || performer == 'stunt_performer') {
@@ -548,7 +548,7 @@
 					}
 				}
 				console.log(cost);
-				console.log(Fpe.performers[key]+'x '+Fpe.labels[key]);
+
 				Fpe.putTotal({
 					text: Fpe.performers[key]+'x '+Fpe.labels[key],
 					value: cost,
@@ -1036,6 +1036,14 @@
 			Fpe.putTotal({
 				text: 'Union Benefits ('+(Fpe.type == 'industrial' ? 16.5 : 19)+'%)',
 				value: pensionFee,
+				el: $('#fpe .totals .other-fees'),
+				bold: true,
+			});
+		}
+		if (reimbursements) {
+			Fpe.putTotal({
+				text: 'Travel Reimbursements',
+				value: reimbursements,
 				el: $('#fpe .totals .other-fees'),
 				bold: true,
 			});
