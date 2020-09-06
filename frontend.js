@@ -381,7 +381,7 @@
 		console.log(prev.id);
 		if (id == 'final') {
 			//$('#fpe .totals').css('position', 'static');
-			$('#fpe .expand').click();
+			//$('#fpe .expand').click();
 			$('#fpe').removeClass('ready');
 		}
 		Fpe.next = prev.follow;
