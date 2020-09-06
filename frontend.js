@@ -366,10 +366,10 @@
 	}
 	Fpe.canGoBack = function () {
 		console.log(Fpe.prev.length);
-		if (Fpe.prev.length == 0) {
+		if (Fpe.prev.length == 0) {console.log('hide back button');
 			$('#fpe .back').hide();
 			Fpe.next = [];
-		} else {console.log('hide back button');
+		} else {
 			$('#fpe .back').show();
 		}
 	}
@@ -382,7 +382,7 @@
 		if (prev.id == 'final') {
 			//$('#fpe .totals').css('position', 'static');
 			$('#fpe .expand').click();
-			//$('#fpe').removeClass('ready');
+			$('#fpe').removeClass('ready');
 			Fpe.totalsOnScreen();
 			Fpe.calculate();
 		}
