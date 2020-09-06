@@ -369,7 +369,7 @@
 		if (Fpe.prev.length == 0) {
 			$('#fpe .back').hide();
 			Fpe.next = [];
-		} else {
+		} else {console.log('hide back button');
 			$('#fpe .back').show();
 		}
 	}
@@ -383,8 +383,8 @@
 			//$('#fpe .totals').css('position', 'static');
 			$('#fpe .expand').click();
 			$('#fpe').removeClass('ready');
-			$('#fpe .back').hide();
 			Fpe.totalsOnScreen();
+			Fpe.calculate();
 		}
 		Fpe.next = prev.follow;
 		$('#'+prev.id).slideDown(400, function() {
