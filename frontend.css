@@ -10,7 +10,7 @@
 
 @media (max-width: 767px) { #fpe #legal .inner { max-height: 60vh; margin-top: 10vh; overflow: scroll; } }
 
-#fpe.ready .back { display: none }
+#fpe.ready .back { display: none /*!important*/; }
 
 #fpe.ready .totals { position: static; }
 
