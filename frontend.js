@@ -367,7 +367,7 @@
 	Fpe.canGoBack = function () {
 		console.log(Fpe.prev.length);
 		if (Fpe.prev.length == 0) {
-			//$('#fpe .back').hide();
+			$('#fpe .back').hide();
 			Fpe.next = [];
 		} else {
 			$('#fpe .back').show();
@@ -378,6 +378,7 @@
 		//Fpe.moveNext();
 		$('.question:visible').slideUp();
 		var prev = Fpe.prev.pop();
+		console.log(prev.id);
 		Fpe.next = prev.follow;
 		$('#'+prev.id).slideDown(400, function() {
 			Fpe.totalsOnScreen();
