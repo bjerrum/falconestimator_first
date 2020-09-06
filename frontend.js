@@ -382,7 +382,7 @@
 		if (prev.id == 'final') {
 			//$('#fpe .totals').css('position', 'static');
 			$('#fpe .expand').click();
-			$('#fpe').removeClass('ready');
+			//$('#fpe').removeClass('ready');
 			Fpe.totalsOnScreen();
 			Fpe.calculate();
 		}
