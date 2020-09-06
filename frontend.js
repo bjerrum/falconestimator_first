@@ -1143,7 +1143,7 @@
 		return selected;
 	}
 
-	Fpe. = function() {
+	Fpe.totalsOnScreen = function() {
 		var footer = $('#footer-outer');
 		if (Fpe.checkVisible(footer)) {
 			var b = $('#footer-outer').outerHeight() - ($('body').outerHeight() - ($(window).scrollTop() +$(window).height()))
