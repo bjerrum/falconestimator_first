@@ -410,7 +410,7 @@
 		if (id == 'thank-you') {
 			//$('#fpe .totals').css('position', 'static');
 			$('#fpe .expand').click();
-			$('#fpe').addClass('ready');
+			//$('#fpe').addClass('ready');
 		}
 		Fpe.prev.push({
 			id: $('.question:visible').attr('id'),
