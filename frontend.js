@@ -366,10 +366,10 @@
 	}
 	Fpe.canGoBack = function () {
 		console.log(Fpe.prev.length);
-		if (Fpe.prev.length == 0) {console.log('hide back button');
+		if (Fpe.prev.length == 0) {
 			$('#fpe .back').hide();
 			Fpe.next = [];
-		} else {
+		} else {console.log('show back button');
 			$('#fpe .back').show();
 		}
 	}
