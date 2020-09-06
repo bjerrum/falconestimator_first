@@ -365,6 +365,7 @@
 		el.slideDown();
 	}
 	Fpe.canGoBack = function () {
+		console.log(Fpe.prev.length);
 		if (Fpe.prev.length == 0) {
 			$('#fpe .back').hide();
 			Fpe.next = [];
