@@ -468,6 +468,7 @@
 		var subtotal = 0;
 		var sessionFeesTotal = 0;
 		var broadcastFeesTotal = 0;
+		var reimbursements = 0;
 
 		var broadcast = Fpe.getSelected(type+'-broadcast', 'broadcast');
 		var internet = Fpe.getSelected(type+'-internet', 'length');
@@ -538,7 +539,7 @@
 				 
 				if (Fpe.options[performer+'_travel']) {
 					//cost += parseInt(Fpe.options[performer+'_travel']);
-					var reimbursements += parseInt(Fpe.options[performer+'_travel']);
+					reimbursements += parseInt(Fpe.options[performer+'_travel']);
 				}
 				
 				if (performer == 'actor_on_camera' || performer == 'stunt_performer') {
@@ -1040,7 +1041,7 @@
 				bold: true,
 			});
 		}
-		if (reimbursements) {
+		if (reimbursements  > 0) {
 			Fpe.putTotal({
 				text: 'Travel Reimbursements',
 				value: reimbursements,

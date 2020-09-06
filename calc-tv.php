@@ -58,7 +58,7 @@
 </div>
 
 <div class="question" id="tv_<?php echo $type ?>_travel">
-	<h4>Travel reimbursments work for <span><?php echo $label ?></span>?</h4>
+	<h4>Travel reimbursements work for <span><?php echo $label ?></span>?</h4>
 	<input type="number" name="<?php echo $type ?>_travel" value="0" placeholder="value in $">
 	<div class="answer">Continue</div>
 </div>
