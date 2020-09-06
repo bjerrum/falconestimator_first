@@ -367,7 +367,7 @@
 	Fpe.canGoBack = function () {
 		console.log(Fpe.prev.length);
 		if (Fpe.prev.length == 0) {
-			//$('#fpe .back').hide();
+			$('#fpe .back').hide();
 			Fpe.next = [];
 		} else {
 			$('#fpe .back').show();
@@ -383,6 +383,7 @@
 			//$('#fpe .totals').css('position', 'static');
 			$('#fpe .expand').click();
 			$('#fpe').removeClass('ready');
+			$('#fpe .back').hide();
 			Fpe.totalsOnScreen();
 		}
 		Fpe.next = prev.follow;
