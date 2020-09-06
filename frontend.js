@@ -379,7 +379,7 @@
 		$('.question:visible').slideUp();
 		var prev = Fpe.prev.pop();
 		console.log(prev.id);
-		if (id == 'final') {
+		if (prev.id == 'final') {
 			//$('#fpe .totals').css('position', 'static');
 			$('#fpe .expand').click();
 			$('#fpe').removeClass('ready');
