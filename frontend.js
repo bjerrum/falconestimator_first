@@ -381,8 +381,9 @@
 		console.log(prev.id);
 		if (id == 'final') {
 			//$('#fpe .totals').css('position', 'static');
-			//$('#fpe .expand').click();
+			$('#fpe .expand').click();
 			$('#fpe').removeClass('ready');
+			Fpe.totalsOnScreen();
 		}
 		Fpe.next = prev.follow;
 		$('#'+prev.id).slideDown(400, function() {
@@ -1142,7 +1143,7 @@
 		return selected;
 	}
 
-	Fpe.totalsOnScreen = function() {
+	Fpe. = function() {
 		var footer = $('#footer-outer');
 		if (Fpe.checkVisible(footer)) {
 			var b = $('#footer-outer').outerHeight() - ($('body').outerHeight() - ($(window).scrollTop() +$(window).height()))
